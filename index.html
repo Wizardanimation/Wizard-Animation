@@ -6,183 +6,27 @@
     <title>Veer Mathur - Wizard Animation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-eR5P9mvr8kL82nH8liKoaB23MB6PaM9vknxu2jVJARlm5Rg1d3kjoaLfnt8KwOrEDfo/WGxkHwCz5dKlOC54IQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #1e1e1e, #383838); /* Blackish gradient background */
-            color: #fff;
-        }
-        .container {
-            width: 80%;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-        }
-        header {
-            text-align: center;
-            padding: 50px 0;
-            background: linear-gradient(to right, #2c3e50, #4ca1af);
-            color: #fff;
-            border-radius: 15px 15px 0 0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        header .logo {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 20px;
-            animation: bounce 2s infinite;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3.5em;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-        }
-        header h2 {
-            margin: 0;
-            font-size: 1.8em;
-            font-weight: normal;
-            transition: color 0.3s ease;
-        }
-        header h2:hover {
-            color: #ff7979; /* Pastel red color on hover */
-        }
-        section {
-            margin: 50px 0;
-            text-align: center;
-        }
-        section h2 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            color: #ff7979; /* Pastel red color */
-            position: relative;
-            display: inline-block;
-            transition: color 0.3s ease;
-        }
-        section h2:hover {
-            color: #badc58; /* Pastel green color on hover */
-        }
-        section h2::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background-color: #ff7979; /* Pastel red color */
-        }
-        section p {
-            font-size: 1.3em;
-            line-height: 1.8;
-            color: #dfe6e9; /* Light gray color */
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .project {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .project:hover {
-            transform: translateY(-10px);
-        }
-        .project h3 {
-            font-size: 2em;
-            color: #dfe6e9; /* Light gray color */
-        }
-        .project p {
-            font-size: 1.2em;
-            color: #dfe6e9; /* Light gray color */
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: linear-gradient(to right, #2c3e50, #4ca1af);
-            color: #fff;
-            border-radius: 0 0 15px 15px;
-        }
-        .contact-info {
-            list-style-type: none;
-            padding: 0;
-            margin: 20px 0;
-            text-align: center;
-        }
-        .contact-info li {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-        .contact-info li a {
-            color: #dfe6e9; /* Light gray color */
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .contact-info li a:hover {
-            color: #ffbe76; /* Pastel orange color on hover */
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-30px);
-            }
-            60% {
-                transform: translateY(-15px);
-            }
-        }
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-            header h2 {
-                font-size: 1.5em;
-            }
-            section h2 {
-                font-size: 2em;
-            }
-            section p, .project p {
-                font-size: 1em;
-            }
-            .contact-info li {
-                font-size: 1.2em;
-            }
-        }
-        @media (max-width: 480px) {
-            .container {
-                width: 90%;
-                margin: 20px auto;
-                padding: 10px;
-            }
-            header h1 {
-                font-size: 2em;
-            }
-            header h2 {
-                font-size: 1.2em;
-            }
-            section h2 {
-                font-size: 1.5em;
-            }
-            section p, .project p {
-                font-size: 0.9em;
-            }
-            .contact-info li {
-                font-size: 1em;
-            }
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="veer.css"> -->
+    <link rel="stylesheet" href="blackWivesMatter.css">
+
 </head>
 <body>
     <header>
-        <img src="Screenshot 2023-11-02 103950-modified.png" alt="Veer Mathur Logo" class="logo"> <!-- Replace 'logo.png' with the path to your actual logo image -->
+        <img src="pfp.png" alt="Veer Mathur Logo" class="logo">
         <h1>Veer Mathur</h1>
         <h2>Wizard Animation</h2>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
     <div class="container">
         <section id="about-me">
@@ -229,6 +73,8 @@
     <footer>
         <p>&copy; 2024 Veer Mathur. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
     <script>
         // Trigger the logo animation when window is fully loaded
